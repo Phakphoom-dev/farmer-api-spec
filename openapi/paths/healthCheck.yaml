@@ -1,0 +1,20 @@
+get:
+  tags:
+    - Default
+  summary: Get server running status
+  security:
+    - token: []
+  description: |
+    get server health check status is server running correctly
+  operationId: healthCheck
+  responses:
+    "200":
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/HealthCheck.yaml
+            example: "3/1/2024, 4:53:54 PM: [App Controller] Initializing check application health function."
+    "404":
+      description: Path not found
+      $ref: ../components/responses/404.yaml

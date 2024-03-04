@@ -1,0 +1,11 @@
+{
+  "name": "farmer-openapi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "redocly preview-docs"
+  },
+  "dependencies": {
+    "@redocly/cli": "^1.10.1"
+  }
+}

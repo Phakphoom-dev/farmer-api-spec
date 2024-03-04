@@ -1,0 +1,19 @@
+type: object
+description: >-
+  404 Error response
+properties:
+  message:
+    type: string
+    description: >-
+      error message of response
+    format: uri
+    example: "Cannot GET {{path}}"
+  error:
+    type: string
+    description: >-
+      description of endpoint error
+    format: uri
+    example: "Not Found"
+  statusCode:
+    type: number
+    example: 404

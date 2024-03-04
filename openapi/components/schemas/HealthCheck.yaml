@@ -1,0 +1,6 @@
+type: object
+properties:
+  status:
+    description: Health check status
+    type: string
+    example: "3/1/2024, 4:53:54 PM: [App Controller] Initializing check application health function."
